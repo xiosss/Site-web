@@ -1,0 +1,10 @@
+<app-filterproduct (filter)="recherche($event)"></app-filterproduct>
+<p>Liste des produits</p>
+
+<div *ngFor = "let p of filterProduct">
+   <h4>{{p.produit}} : {{p.prix}} €   - <button (click)="addPanier(p.id)">Ajout Panier</button>  </h4> 
+</div>
+<div *ngIf= "isEmpty">
+    <h4>Pas de resultat</h4> 
+ </div>
+ 

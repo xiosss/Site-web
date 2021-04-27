@@ -1,0 +1,62 @@
+Users:
+    type: entity
+    table: users
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: SEQUENCE
+    fields:
+        firstname:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        lastname:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        login:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        email:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        phonenumber:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        password:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        address:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        postalcode:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+    lifecycleCallbacks: {  }
